@@ -115,14 +115,19 @@ const Login = () => {
             </Badge>
           )}
 
+
           {/* Login Button */}
           <Button
             loading={loading}
             style={{ width: "250px", cursor: "pointer" }}
             onClick={onSubmit}
-          >
+            >
             Continue
           </Button>
+
+             <Link href={'/reset_password'}>
+              <Text size={'1'} style={{fontWeight:'500'}} >Forget Password ?</Text>
+              </Link> 
 
           {/* Line */}
           <Flex direction={"row"} className="items-center justify-center">
